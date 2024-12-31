@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.contact p {
+    margin: 0.3rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.job, .project {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+.project {
+    background: #f9f9f9; /* Màu nền nhẹ để tạo sự khác biệt */
+    border: 1px solid #ddd; /* Đường viền nhấn mạnh */
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px; /* Bo góc mềm mại */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.project h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    margin: 0.5rem 0;
+}
+
+.project ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.project:nth-child(even) {
+    background: #eef7ff; /* Xen kẽ màu nền */
+}
+
+.project:nth-child(odd) {
+    background: #ffffff;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Hiệu ứng nổi khi rê chuột */
+    transition: 0.3s;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.skill-category {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+.skill-category ul {
+    list-style: square;
+    padding-left: 1.5rem;
+    margin: 0.5rem 0 0;
+}
+
+.skill-category ul li {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.skill-category p {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Bố cục tổng thể */
+#games {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+#games h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+/* Vùng từng game */
+.game-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Phần khung chạy game */
+.game-preview {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background: #ddd;
+    border-radius: 8px;
+    border: 2px dashed #bbb;
+}
+
+.game-placeholder {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Phần thông tin game */
+.game-info {
+    text-align: left;
+}
+
+.game-info h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.game-info p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.toggle-details {
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #4caf50;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.toggle-details .arrow {
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.extra-details {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Hiển thị khi mở rộng */
+.game-item.open .extra-details {
+    display: block;
+}
+
+.game-item.open .toggle-details .arrow {
+    transform: rotate(90deg);
+}
